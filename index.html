@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake Cottage - Handmade Cupcakes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f8a5d9 0%, #ffc0f0 100%);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #fff;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #e0789f;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #fff9f5, #fff);
+            min-height: 500px;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 1000px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            color: #d63384;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #d63384;
+            color: #fff;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #a02860;
+        }
+
+        .about, .products, .contact {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about {
+            background-color: #fff9f5;
+        }
+
+        .about h3, .products h3, .contact h3 {
+            font-size: 2.2em;
+            color: #d63384;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.05em;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+        }
+
+        .products {
+            background-color: #fff;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card h4 {
+            color: #d63384;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .product-card p {
+            color: #666;
+        }
+
+        .contact {
+            background-color: #fff9f5;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-item h4 {
+            color: #d63384;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .contact-item p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #e0789f;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .hero {
+                padding: 30px 20px;
+                min-height: auto;
+            }
+
+            .hero h2 {
+                font-size: 1.8em;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🧁 Cupcake Cottage</h1>
+        <p>Handmade Cupcakes with Love</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Our Cupcakes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="https://images.unsplash.com/photo-1614707267537-b85faf00021b?w=400&h=400&fit=crop" alt="Delicious Cupcake with Frosting">
+            <h2>Welcome to Cupcake Cottage</h2>
+            <p>Discover our delightful selection of handmade cupcakes, crafted with the finest ingredients and decorated with love. Perfect for celebrations, events, or just treating yourself!</p>
+            <a href="#contact" class="cta-button">Order Now</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h3>About Our Cottage</h3>
+        <p>At Cupcake Cottage, we believe that every cupcake tells a story. Since our opening, we've been dedicated to creating the most delicious, beautifully decorated cupcakes in Australia. Each cupcake is handmade with love, using premium ingredients and creative designs that will delight your taste buds and your eyes. Whether you're celebrating a special occasion or simply craving something sweet, we've got the perfect cupcake for you!</p>
+    </section>
+
+    <section class="products" id="products">
+        <h3>Our Cupcake Selection</h3>
+        <div class="product-grid">
+            <div class="product-card">
+                <h4>Vanilla Dream</h4>
+                <p>Classic vanilla cupcake with silky vanilla frosting and sprinkles</p>
+            </div>
+            <div class="product-card">
+                <h4>Chocolate Bliss</h4>
+                <p>Rich chocolate cupcake with dark chocolate ganache</p>
+            </div>
+            <div class="product-card">
+                <h4>Strawberry Delight</h4>
+                <p>Fresh strawberry cupcake with cream cheese frosting</p>
+            </div>
+            <div class="product-card">
+                <h4>Red Velvet Romance</h4>
+                <p>Elegant red velvet with cream cheese frosting</p>
+            </div>
+            <div class="product-card">
+                <h4>Lemon Zest</h4>
+                <p>Bright lemon cupcake with tangy lemon buttercream</p>
+            </div>
+            <div class="product-card">
+                <h4>Custom Creations</h4>
+                <p>Let us create a custom flavour for your special event!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h3>Get in Touch</h3>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h4>📍 Visit Us</h4>
+                <p>Somewhere in Australia<br>Open Tuesday to Saturday</p>
+            </div>
+            <div class="contact-item">
+                <h4>📧 Email</h4>
+                <p><a href="mailto:hello@cupcakecottage.com.au" style="color: #d63384; text-decoration: none;">hello@cupcakecottage.com.au</a></p>
+            </div>
+            <div class="contact-item">
+                <h4>📱 Call Us</h4>
+                <p><a href="tel:+61234567890" style="color: #d63384; text-decoration: none;">+61 (02) 3456 7890</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cupcake Cottage - All rights reserved</p>
+        <p>Melbourne, Australia | <a href="https://cupcakecottage.com.au" style="color: #fff; text-decoration: none;">cupcakecottage.com.au</a></p>
+    </footer>
+</body>
+</html>
