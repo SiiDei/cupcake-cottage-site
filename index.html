@@ -458,8 +458,9 @@
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 360px));
             gap: 28px;
+            justify-content: center;
         }
 
         /* Card hide/show animation for filtering */
@@ -486,16 +487,6 @@
             font-weight: 700;
             padding: 3px 10px;
             border-radius: 50px;
-        }
-
-        /* Poster-style image: contain instead of cover so full image shows */
-        .product-card-img-wrap--poster {
-            height: 320px !important;
-        }
-
-        .product-card-image--poster {
-            object-fit: contain !important;
-            padding: 10px;
         }
 
         /* Category-specific card image fallback gradients */
@@ -1037,8 +1028,8 @@
 
                 <!-- ── PROTEIN BALLS ── -->
                 <div class="product-card fade-up" data-category="protein">
-                    <div class="product-card-img-wrap product-card-img-wrap--poster" style="background: #fdf5ec;">
-                        <img src="images/products/protein-balls.jpg" alt="Protein Balls" class="product-card-image product-card-image--poster" onerror="this.parentElement.style.background='linear-gradient(135deg,#fef9f0,#d4a574)'">
+                    <div class="product-card-img-wrap">
+                        <img src="images/products/protein-balls.jpg" alt="Protein Balls" class="product-card-image" onerror="this.parentElement.style.background='linear-gradient(135deg,#fef9f0,#d4a574)'">
                         <span class="product-tag">Customer Fave</span>
                     </div>
                     <div class="product-card-content">
